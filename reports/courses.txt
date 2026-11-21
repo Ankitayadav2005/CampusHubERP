@@ -1,0 +1,24 @@
+========== COURSE REPORT ==========
+
+Course Code: CS101
+Course Name: Advanced Python Programming
+Credits: 4
+-----------------------------------
+Course Code: CS202
+Course Name: Database Management
+Credits: 3
+-----------------------------------
+Course Code: TESTCOURSE900
+Course Name: Test Course
+Credits: 3
+-----------------------------------
+Course Code: CS203
+Course Name: Web Development
+Credits: 3
+-----------------------------------
+Course Code: CS204
+Course Name: Software Engineering
+Credits: 3
+-----------------------------------
+
+Total Courses: 5

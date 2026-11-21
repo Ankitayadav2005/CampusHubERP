@@ -1,0 +1,27 @@
+[
+    {
+        "course_code": "CS101",
+        "course_name": "Advanced Python Programming",
+        "credits": 4
+    },
+    {
+        "course_code": "CS202",
+        "course_name": "Database Management",
+        "credits": 3
+    },
+    {
+        "course_code": "TESTCOURSE900",
+        "course_name": "Test Course",
+        "credits": 3
+    },
+    {
+        "course_code": "CS203",
+        "course_name": "Web Development",
+        "credits": 3
+    },
+    {
+        "course_code": "CS204",
+        "course_name": "Software Engineering",
+        "credits": 3
+    }
+]

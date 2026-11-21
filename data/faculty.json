@@ -1,0 +1,16 @@
+[
+    {
+        "faculty_id": "FC001",
+        "name": "Rahul Sharma",
+        "age": 35,
+        "email": "rahul@gmail.com",
+        "department": "Computer Science"
+    },
+    {
+        "faculty_id": "FC100",
+        "name": "Test Faculty",
+        "age": 35,
+        "email": "fc100@gmail.com",
+        "department": "Computer Science"
+    }
+]

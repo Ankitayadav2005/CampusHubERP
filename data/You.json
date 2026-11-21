@@ -1,0 +1,72 @@
+[
+    {
+        "student_id": "ST001",
+        "name": "Ankita",
+        "age": 21,
+        "email": "ankita@gmail.com",
+        "department": "Computer Science"
+    },
+    {
+        "student_id": "ST002",
+        "name": "Priya",
+        "age": 22,
+        "email": "priya@gmail.com",
+        "department": "Computer Science"
+    },
+    {
+        "student_id": "ST003",
+        "name": "Priya",
+        "age": 22,
+        "email": "priya@gmail.com",
+        "department": "Computer Science"
+    },
+    {
+        "student_id": "ST004",
+        "name": "Rahul",
+        "age": 23,
+        "email": "rahul@gmail.com",
+        "department": "Computer Science"
+    },
+    {
+        "student_id": "ST005",
+        "name": "Neha",
+        "age": 21,
+        "email": "neha@gmail.com",
+        "department": "Computer Science"
+    },
+    {
+        "student_id": "ST099",
+        "name": "Neha",
+        "age": 21,
+        "email": "neha@gmail.com",
+        "department": "Computer Science"
+    },
+    {
+        "student_id": "ST20261026",
+        "name": "Neha",
+        "age": 21,
+        "email": "neha20261026@gmail.com",
+        "department": "Computer Science"
+    },
+    {
+        "student_id": "ST100",
+        "name": "Neha",
+        "age": 21,
+        "email": "neha@gmail.com",
+        "department": "Computer Science"
+    },
+    {
+        "student_id": "TEST777",
+        "name": "Test Student",
+        "age": 21,
+        "email": "test777@gmail.com",
+        "department": "Computer Science"
+    },
+    {
+        "student_id": "TEST779",
+        "name": "Test Student",
+        "age": 21,
+        "email": "test779@gmail.com",
+        "department": "Computer Science"
+    }
+]

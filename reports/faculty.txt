@@ -1,0 +1,16 @@
+========== FACULTY REPORT ==========
+
+Faculty ID: FC001
+Name: Rahul Sharma
+Age: 35
+Email: rahul@gmail.com
+Department: Computer Science
+-----------------------------------
+Faculty ID: FC100
+Name: Test Faculty
+Age: 35
+Email: fc100@gmail.com
+Department: Computer Science
+-----------------------------------
+
+Total Faculty: 2

@@ -1,0 +1,64 @@
+========== STUDENT REPORT ==========
+
+Student ID: ST001
+Name: Ankita
+Age: 21
+Email: ankita@gmail.com
+Department: Computer Science
+-----------------------------------
+Student ID: ST002
+Name: Priya
+Age: 22
+Email: priya@gmail.com
+Department: Computer Science
+-----------------------------------
+Student ID: ST003
+Name: Priya
+Age: 22
+Email: priya@gmail.com
+Department: Computer Science
+-----------------------------------
+Student ID: ST004
+Name: Rahul
+Age: 23
+Email: rahul@gmail.com
+Department: Computer Science
+-----------------------------------
+Student ID: ST005
+Name: Neha
+Age: 21
+Email: neha@gmail.com
+Department: Computer Science
+-----------------------------------
+Student ID: ST099
+Name: Neha
+Age: 21
+Email: neha@gmail.com
+Department: Computer Science
+-----------------------------------
+Student ID: ST20261026
+Name: Neha
+Age: 21
+Email: neha20261026@gmail.com
+Department: Computer Science
+-----------------------------------
+Student ID: ST100
+Name: Neha
+Age: 21
+Email: neha@gmail.com
+Department: Computer Science
+-----------------------------------
+Student ID: TEST777
+Name: Test Student
+Age: 21
+Email: test777@gmail.com
+Department: Computer Science
+-----------------------------------
+Student ID: TEST779
+Name: Test Student
+Age: 21
+Email: test779@gmail.com
+Department: Computer Science
+-----------------------------------
+
+Total Students: 10
