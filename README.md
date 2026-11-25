@@ -1,23 +1,25 @@
+﻿# CampusHub ERP
 
-# CampusHub ERP
-
-CampusHub ERP is a Python-based Student Management System built using FastAPI and SQLite.
+CampusHub ERP is a web-based College Management System developed using Python, FastAPI, SQLAlchemy, and SQLite.
 
 ## Features
 
+- Web-based management dashboard
 - Student CRUD operations
 - Faculty CRUD operations
 - Course CRUD operations
 - Enrollment CRUD operations
+- User registration and login
+- Session-based authentication
+- Forgot password and password reset
 - Email validation
 - SQLite database integration
-- Repository Pattern
-- Service Layer
-- Singleton Pattern
-- Factory Pattern
+- Repository Pattern and Service Layer
+- Singleton Pattern and Factory Pattern
 - Application logging
 - JSON data export
-- Text report generation
+- PDF report downloads
+- Excel report downloads
 - Automated testing using Pytest
 
 ## Technologies Used
@@ -26,12 +28,13 @@ CampusHub ERP is a Python-based Student Management System built using FastAPI an
 - FastAPI
 - SQLAlchemy
 - SQLite
+- HTML, CSS, JavaScript
 - Pytest
 - HTTPX
+- ReportLab
+- OpenPyXL
 
 ## Installation
-
-Install dependencies:
 
     python -m pip install -r requirements.txt
 
@@ -39,18 +42,29 @@ Install dependencies:
 
     python -m uvicorn app.main:app --reload
 
-## API Documentation
+## Application URLs
 
-http://127.0.0.1:8000/docs
+- Website: http://127.0.0.1:8000
+- API Documentation: http://127.0.0.1:8000/docs
 
 ## Run Tests
 
     python -m pytest -v
 
-## Export Data and Generate Reports
+Current test result: 14 tests passed.
 
-    python -m app.utils.data_manager
+## Reports
+
+PDF and Excel reports are available for students, faculty, courses, and enrollments.
 
 ## Database
 
-The project uses SQLite database: campushub.db.
+SQLite database: campushub.db
+
+## Project Purpose
+
+CampusHub ERP simplifies college administration through centralized student, faculty, course, enrollment, and report management.
+
+---
+
+CampusHub ERP - College Management Made Easier.

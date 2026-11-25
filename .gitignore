@@ -35,3 +35,5 @@ Thumbs.db
 # Application logs and backup files
 logs/
 *_backup.py
+# Log files
+*.log
