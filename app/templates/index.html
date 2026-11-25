@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusHub ERP</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- LOGIN SCREEN -->
+<section id="auth-screen" class="auth-screen">
+    <div class="auth-card">
+
+        <div class="auth-logo">🎓</div>
+
+        <!-- Login -->
+        <div id="login-panel">
+            <h1>CampusHub ERP</h1>
+            <p class="auth-subtitle">Login to your account</p>
+
+            <form id="login-form" class="auth-form">
+                <label>
+                    Email Address
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                </label>
+
+                <label>
+                    Password
+                    <input type="password" name="password" placeholder="Enter password" required>
+                </label>
+
+                <button type="submit" class="auth-button">Login</button>
+            </form>
+
+            <div id="login-message" class="auth-message"></div>
+
+            <div class="auth-links">
+                <p><a href="#" id="show-forgot">Forgot Password?</a></p>
+                <p style="margin-top: 15px;">
+                    Don't have an account?
+                    <a href="#" id="show-register">Register</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Registration -->
+        <div id="register-panel" class="hidden">
+            <h1>Create Account</h1>
+            <p class="auth-subtitle">Join CampusHub ERP</p>
+
+            <form id="register-form" class="auth-form">
+                <label>
+                    Full Name
+                    <input type="text" name="name" placeholder="Enter your name" minlength="2" maxlength="100" required>
+                </label>
+
+                <label>
+                    Email Address
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                </label>
+
+                <label>
+                    Password
+                    <input type="password" name="password" placeholder="Minimum 8 characters" minlength="8" maxlength="128" required>
+                </label>
+
+                <button type="submit" class="auth-button">Create Account</button>
+            </form>
+
+            <div id="register-message" class="auth-message"></div>
+
+            <div class="auth-links">
+                Already have an account?
+                <a href="#" id="show-login">Login</a>
+            </div>
+        </div>
+
+        <!-- Forgot Password -->
+        <div id="forgot-panel" class="hidden">
+            <h1>Forgot Password?</h1>
+            <p class="auth-subtitle">Enter your registered email address</p>
+
+            <form id="forgot-form" class="auth-form">
+                <label>
+                    Email Address
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                </label>
+
+                <button type="submit" class="auth-button">Send Reset Link</button>
+            </form>
+
+            <div id="forgot-message" class="auth-message"></div>
+
+            <div class="auth-links">
+                <a href="#" id="back-to-login">Back to Login</a>
+            </div>
+        </div>
+
+        <!-- Reset Password -->
+        <div id="reset-panel" class="hidden">
+            <h1>Reset Password</h1>
+            <p class="auth-subtitle">Create your new password</p>
+
+            <form id="reset-form" class="auth-form">
+                <label>
+                    New Password
+                    <input type="password" name="new_password" placeholder="Minimum 8 characters" minlength="8" maxlength="128" required>
+                </label>
+
+                <button type="submit" class="auth-button">Reset Password</button>
+            </form>
+
+            <div id="reset-message" class="auth-message"></div>
+
+            <div class="auth-links">
+                <a href="#" id="reset-back-login">Back to Login</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- MAIN ERP WEBSITE -->
+<div id="app-container" class="app-container hidden">
+
+    <aside class="sidebar">
+        <h2>🎓 CampusHub</h2>
+        <p class="sidebar-subtitle">ERP MANAGEMENT</p>
+
+        <nav>
+            <a href="#" class="nav-link active" data-page="dashboard">🏠 Dashboard</a>
+            <a href="#" class="nav-link" data-page="students">👨‍🎓 Students</a>
+            <a href="#" class="nav-link" data-page="faculty">👩‍🏫 Faculty</a>
+            <a href="#" class="nav-link" data-page="courses">📚 Courses</a>
+            <a href="#" class="nav-link" data-page="enrollments">📝 Enrollments</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <span>CampusHub ERP</span>
+            <small>Management System v1.0</small>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h1 id="page-title">Dashboard</h1>
+                <p>Welcome to CampusHub ERP Management System</p>
+            </div>
+
+            <div class="admin-profile">
+                <span>👤</span>
+                <strong id="logged-user">User</strong>
+                <button id="logout-button" class="logout-button">Logout</button>
+            </div>
+        </header>
+
+        <section id="dashboard-page" class="page-section">
+
+            <div class="welcome-banner">
+                <div>
+                    <h2>Welcome to CampusHub ERP 👋</h2>
+                    <p>Manage your college activities from one place.</p>
+                </div>
+                <span class="banner-icon">🎓</span>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span>👨‍🎓</span>
+                    <p>Total Students</p>
+                    <h2 id="student-count">0</h2>
+                </div>
+
+                <div class="stat-card">
+                    <span>👩‍🏫</span>
+                    <p>Total Faculty</p>
+                    <h2 id="faculty-count">0</h2>
+                </div>
+
+                <div class="stat-card">
+                    <span>📚</span>
+                    <p>Total Courses</p>
+                    <h2 id="course-count">0</h2>
+                </div>
+
+                <div class="stat-card">
+                    <span>📝</span>
+                    <p>Total Enrollments</p>
+                    <h2 id="enrollment-count">0</h2>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2>Quick Management</h2>
+                <div class="quick-grid">
+                    <button onclick="showPage('students')">Manage Students →</button>
+                    <button onclick="showPage('faculty')">Manage Faculty →</button>
+                    <button onclick="showPage('courses')">Manage Courses →</button>
+                    <button onclick="showPage('enrollments')">Manage Enrollments →</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="management-page" class="page-section hidden">
+            <div class="content-card">
+                <div class="section-heading">
+                    <h2 id="table-heading">Records</h2>
+                    <button id="add-button" class="primary-button">+ Add New</button>
+                </div>
+                <div class="search-box">
+    <input
+        type="text"
+        id="search-input"
+        placeholder="Search records..."
+    >
+</div>
+
+<div class="report-buttons">
+    <button id="download-pdf-button" class="primary-button">
+        Download PDF
+    </button>
+
+    <button id="download-excel-button" class="primary-button">
+        Download Excel
+    </button>
+</div>
+
+
+                <div id="message"></div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead id="table-head"></thead>
+                        <tbody id="table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+
+<!-- RECORD MODAL -->
+<div id="record-modal" class="modal hidden">
+    <div class="modal-content">
+        <div class="section-heading">
+            <h2 id="modal-title">Add Record</h2>
+            <button id="close-modal" class="close-button">✕</button>
+        </div>
+
+        <form id="record-form">
+            <div id="form-fields"></div>
+            <button type="submit" class="primary-button">Save Record</button>
+        </form>
+    </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

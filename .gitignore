@@ -1,7 +1,37 @@
-﻿__pycache__/
+﻿# Python cache
+__pycache__/
 *.py[cod]
+*.pyo
+
+# Testing
 .pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environment
 .venv/
 venv/
+env/
+
+# Environment secrets
 .env
+.env.*
+
+# VS Code
 .vscode/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated reports
+*.pdf
+*.xlsx
+
+# Operating system
+.DS_Store
+Thumbs.db
+# Application logs and backup files
+logs/
+*_backup.py

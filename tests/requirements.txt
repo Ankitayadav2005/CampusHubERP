@@ -1,6 +1,10 @@
-
 fastapi
 uvicorn
 sqlalchemy
 pytest
 httpx
+python-dotenv
+itsdangerous
+reportlab
+openpyxl
+email-validator

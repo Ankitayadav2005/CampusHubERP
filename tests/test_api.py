@@ -1,38 +1,27 @@
-from fastapi.testclient import TestClient
 
-from app.main import app
-
-client = TestClient(app)
-
-
-def test_home():
+def test_home(client):
     response = client.get("/")
 
     assert response.status_code == 200
-    assert response.json() == {
-        "message": "CampusHub ERP API is running"
-    }
+    assert "text/html" in response.headers["content-type"]
+    assert "CampusHub ERP" in response.text
 
 
-def test_get_students():
+def test_get_students(client):
     response = client.get("/students")
-
     assert response.status_code == 200
 
 
-def test_get_faculty():
+def test_get_faculty(client):
     response = client.get("/faculty")
-
     assert response.status_code == 200
 
 
-def test_get_courses():
+def test_get_courses(client):
     response = client.get("/courses")
-
     assert response.status_code == 200
 
 
-def test_get_enrollments():
+def test_get_enrollments(client):
     response = client.get("/enrollments")
-
     assert response.status_code == 200
